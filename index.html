@@ -6,48 +6,167 @@
     <title>Document</title>
     <link rel="stylesheet" href="src/output.css">
 </head>
-<body>
+<body class="scroll-smooth">
     <!-- header -->
           
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
         <div class="container max-w-screen-lg mx-auto">
             <div class="flex items-center justify-between relative">
                <div class="px-4">
-                 <a class="font-bold text-teal-500 block py-6" href="">ArgiiAhm</a>
+                 <a class="font-bold text-teal-500 block py-6" href="">Mothh.</a>
                </div>
                <div class="flex items-center px-4">
-                  <button id="hamburger" class="block absolute right-4" type="button">
+                  <button id="hamburger" class="block absolute right-4 md:hidden lg:hidden" type="button">
                     <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
                     <span class="hamburger-line transition duration-300 ease-in-out"></span>
                     <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
                   </button>
+                  <nav id="menu-list" class="hidden lg:block lg:max-w-full lg:static lg:shadow-none md:block md:static md:max-w-full md:shadow-none backdrop-blur-md absolute py-5 bg-white w-full max-w-[250px] shadow-lg top-full right-4">
+                    <ul class="block lg:flex md:flex">
+                      <li class="group">
+                        <a href="#home" class="font-medium text-black py-2 px-8 hover:text-teal-500 flex ">Home</a>
+                      </li>
+                      <li class="group">
+                        <a href="#about" class="font-medium text-black py-2 px-8 hover:text-teal-500 flex ">About</a>
+                      </li>
+                      <li class="group">
+                        <a href="#Documentasi" class="font-medium text-black py-2 px-8 hover:text-teal-500 flex ">Dokumentasi</a>
+                      </li>
+                      <li class="group">
+                        <a href="#contact" class="font-medium text-black py-2 px-8 hover:text-teal-500 flex ">Contact</a>
+                      </li>
+                    </ul>
+                  </nav>
                </div>
             </div>
         </div>
     </header>
 
     <!-- End header -->
+    <audio src="/dist/img/abt.mp3" id="Musik"></audio>
      
-    <section class="mt-36">
+    <section id="home" class="mt-36 scroll-mt-32">
         <div class="container max-w-screen-lg mx-auto">
-          <div class="flex flex-wrap flex-col lg:flex-row md:flex-row md:text-left items-center text-center lg:text-left">
+          <div class="flex flex-wrap items-center text-center lg:text-left md:text-left">
             <div class="w-full lg:w-1/2 md:w-1/2  px-10">
                <h1 class="text-3xl md:text-5xl lg:text-4xl">Hello there!</h1>
-               <p class="my-2 md:text-2xl">Saya <span class="font-bold text-slate-800">Argi Ahmes Halepiyandra</span>
+               <p class="my-2 md:text-2xl">Saya <span id="name-text" class="font-bold text-slate-800">Argi Ahmes Halepiyandra</span>
                 ,<span class="block text-base">Saya Lahir Di <small class=" text-slate-500 text-base">
                 Brebes, 27 November 2007.</small></span>
               </p>
-              <span class="text-slate-400">Saat Ini Saya Sedang Melakukan Pendidikan <span class="block">Di SMKN 3 BANJAR</span></span>
-              <div class="mt-3">
-                  <a class="bg-teal-500 w-32 sm:text-center text-white font-bold hover:opacity-80 transition duration-300 ease-in-out px-5 py-2 rounded-lg" href="">Download CV</a>
+              <span class="text-slate-400">Saat Ini Saya Sedang Melakukan <span class="block">Pendidikan Sekolah Menengah Kejuruan (SMK)</span></span>
+              <div class="mt-3 mb-10">
+                  <a id="cv" class="bg-teal-500 w-32 sm:text-center text-white font-bold hover:opacity-80 transition duration-300 ease-in-out px-5 py-2 rounded-lg" href="">Download CV</a>
               </div>
             </div>
             <div class="w-full flex justify-center lg:w-1/2 md:w-1/2 px-10">
-              <img class="w-60" src="/dist/img/me1.png" alt="">
+              <img class="w-60" src="/dist/img/me1.png" alt="" />
             </div>
           </div>
         </div>
     </section>
+
+     
+    <section id="about" class="mt-20 mb-36 scroll-mt-60">
+      <div class="container max-w-screen-lg mx-auto">
+        <div class="flex flex-wrap items-center text-center md:text-left lg:text-left">
+          
+          <div class="w-full lg:w-1/2 md:w-1/2 px-10 flex flex-col items-center md:items-start">
+            <h1 class="font-bold text-3xl">About Me</h1>
+            <h3 class="mb-5">Tentang Saya</h3>
+            <img 
+              class="aspect-square my-5 w-52 object-cover shadow-lg mt-3" 
+              src="dist/img/2.png" 
+              alt="">
+          </div>
+          <div class="w-full lg:w-1/2 md:w-1/2 px-10 flex justify-center md:justify-start">
+            <h1 class="font-bold">
+              Hallo!, There!
+              <span class="block font-normal text-slate-400 mt-3">
+                Saat ini, saya aktif membangun website responsif, bermain dengan Tailwind CSS, dan kadang bikin sistem CRUD pakai Laravel. Saya percaya, belajar itu nggak harus nunggu sempurna.
+                <span class="block text-center mt-3">
+                  " --yang penting konsisten dan terus berkembang-- "
+                </span>
+              </span>
+            </h1>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="Documentasi" class="mt-20 mb-36">
+        <div class="container max-w-screen-lg mx-auto">
+            <div class="flex flex-wrap">
+                <div class="w-full px-10">
+                    <div>
+                        <h1 class="font-bold text-3xl text-center">Dokumentasi</h1>
+                        <p class="text-center">Project Saya <span class="text-base text-slate-600 text-[13px]">2 Bulan Terakhir</span></p>
+                    </div>
+                </div>
+                <div class="w-full px-10">
+                  <div class="flex flex-wrap gap-14 justify-center">
+                  <div class="w-full max-w-[250px] bg-transparent shadow-lg mt-5 hover:scale-110 duration-300">
+                    <img class="w-72 py-10" src="/dist/img/pro1.jpg" alt="">
+                    <div class="px-4 py-4">
+                      <p>GalleryShapes</p>
+                      <small class="text-slate-500">Cocok untuk inspirasi desain, atau sekadar eksplorasi visual yang menyenangkan.</small>
+                    </div>
+                  </div>
+                  <div class="w-full max-w-[250px] bg-transparent shadow-lg mt-5 hover:scale-110 duration-300">
+                    <img class="w-72 py-5" src="/dist/img/pro2.jpg" alt="">
+                    <div class="px-4 pb-5">
+                      <p>Absensi </p>
+                      <small class="text-slate-500">Absensi Kelas Online</small>
+                    </div>
+                  </div>
+                  <div class="w-full max-w-[250px] bg-transparent shadow-lg mt-5 hover:scale-110 duration-300">
+                    <!-- <img class="w-72 py-5" src="/dist/img/pro2.jpg" alt=""> -->
+                     <p class="text-center pt-32">Image Not Found</p>
+                    <div class="pt-32 px-4 pb-5">
+                      <p>BookOnline </p>
+                      <small class="text-slate-500">Website Tentang Rekomendasi Buku</small>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="mt-20 mb-36">
+        <div class="container max-w-screen-lg mx-auto">
+          <form onsubmit="Message()">
+          <div class="w-full px-4">
+            <h1 class="text-3xl text-center">Contact Me</h1>
+            <p class="text-center">Hubungi Kami</p>
+          </div>
+          <div class="w-full mx-auto lg:w-2/3 md:w-2/3">
+            <div class="w-full px-4 mb-3">
+                 <label class="block">YourName</label>
+                 <input class="bg-gray-200 focus:outline-none rounded-sm w-full h-8 focus:ring-teal-500 focus:border-teal-500 focus:ring-1" type="text" id="Name" required>
+            </div>
+            <div class="w-full mb-3 px-4">
+              <label class="block">YourEmail</label>
+                 <input class="bg-gray-200 focus:outline-none rounded-sm w-full h-8 focus:ring-teal-500 focus:border-teal-500 focus:ring-1" type="email" id="Email" required>
+            </div>
+            <div class="w-full mb-3 px-4">
+              <label class="block">Message</label>
+              <textarea class="bg-gray-200 focus:outline-none rounded-sm w-full h-20 focus:ring-teal-500 focus:border-teal-500 focus:ring-1" type="text" id="pesan" required></textarea>
+            </div>
+            <div class="w-full mb-3 px-4">
+             <button type="submit" class="bg-teal-500 py-2 px-6 rounded-md w-full text-white transition duration-300 ease-in-out cursor-pointer hover:opacity-80">Send Message</button>
+            </div>
+          </div>
+        </form>
+          </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 py-5 text-center text-white">
+      <p class="text-base text-gray-300">Copyright @Argiiahm 2024</p>
+    </footer>
 
     <script src="/dist/js/script.js"></script>
 </body>
