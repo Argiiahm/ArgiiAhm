@@ -71,3 +71,22 @@ function Message() {
 }
 
 
+//viewmore 
+
+
+const viewmore = document.getElementById("viewmore");
+const card2 = document.getElementById("card2");
+
+viewmore.addEventListener("click", function(){
+  card2.classList.toggle("hidden")
+
+
+   if(card2.classList.contains("hidden")) {
+     viewmore.textContent = "Tampilkan Semua"
+  }else {
+    viewmore.textContent = "Tampilkan Lebih Sedikit"
+   }
+
+})
+
+
