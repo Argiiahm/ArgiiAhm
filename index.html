@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body class="scroll-smooth">
     <!-- header -->
@@ -72,14 +74,14 @@
         <div class="flex flex-wrap items-center text-center md:text-left lg:text-left">
           
           <div class="w-full lg:w-1/2 md:w-1/2 px-10 flex flex-col items-center md:items-start">
-            <h1 class="font-bold text-3xl">About Me</h1>
-            <h3 class="mb-5">Tentang Saya</h3>
-            <img 
+            <h1 data-aos="fade-down" data-aos-duration="1000" class="font-bold text-3xl">About Me</h1>
+            <h3 data-aos="fade-up" data-aos-duration="1000" class="mb-5">Tentang Saya</h3>
+            <img data-aos="fade-right" data-aos-duration="1000"
               class="my-5 w-52 shadow-lg mt-3" 
               src="dist/img/me1.png" 
               alt="">
           </div>
-          <div class="w-full lg:w-1/2 md:w-1/2 px-10 flex justify-center md:justify-start">
+          <div data-aos="fade-left" data-aos-duration="1000" class="w-full lg:w-1/2 md:w-1/2 px-10 flex justify-center md:justify-start">
             <h1 class="font-bold">
               Hallo!, There!
               <span class="block font-normal text-slate-400 mt-3">
@@ -107,21 +109,21 @@
                 </div>
                 <div class="w-full px-10">
                   <div class="flex flex-wrap gap-14 justify-center">
-                  <div class="w-full max-w-[250px] bg-transparent shadow-lg mt-5 hover:scale-110 duration-300">
+                  <div data-aos="flip-left" class="w-full max-w-[250px] bg-transparent shadow-lg mt-5 hover:scale-110 duration-300">
                     <img class="w-72 py-10" src="/dist/img/pro1.jpg" alt="">
                     <div class="px-4 py-4">
                       <p>GalleryShapes</p>
                       <small class="text-slate-500">Cocok untuk inspirasi desain, atau sekadar eksplorasi visual yang menyenangkan.</small>
                     </div>
                   </div>
-                  <div class="w-full max-w-[250px] bg-transparent shadow-lg mt-5 hover:scale-110 duration-300">
+                  <div data-aos="flip-left" class="w-full max-w-[250px] bg-transparent shadow-lg mt-5 hover:scale-110 duration-300">
                     <img class="w-72 py-5" src="/dist/img/pro2.jpg" alt="">
                     <div class="px-4 pb-5">
                       <p>Absensi </p>
                       <small class="text-slate-500">Absensi Kelas Online</small>
                     </div>
                   </div>
-                  <div class="w-full max-w-[250px] bg-transparent shadow-lg mt-5 hover:scale-110 duration-300">
+                  <div data-aos="flip-left" class="w-full max-w-[250px] bg-transparent shadow-lg mt-5 hover:scale-110 duration-300">
                     <!-- <img class="w-72 py-5" src="/dist/img/pro2.jpg" alt=""> -->
                      <p class="text-center pt-32">Image Not Found</p>
                     <div class="pt-32 px-4 pb-5">
@@ -132,7 +134,7 @@
                 </div>
     
                   <div id="card2" class="hidden flex flex-wrap gap-14 justify-center">
-                    <div class="w-full max-w-[250px] bg-transparent shadow-lg mt-5 hover:scale-110 duration-300">
+                    <div data-aos="fade-down" data-aos-duration="2000" class="w-full max-w-[250px] bg-transparent shadow-lg mt-5 hover:scale-110 duration-300">
                       <!-- <img class="w-72 py-5" src="/dist/img/pro2.jpg" alt=""> -->
                        <p class="text-center pt-32">Not Found</p>
                       <div class="pt-32 px-4 pb-5">
@@ -140,7 +142,7 @@
                         <small class="text-slate-500">-</small>
                       </div>
                     </div>
-                  <div class="w-full max-w-[250px] bg-transparent shadow-lg mt-5 hover:scale-110 duration-300">
+                  <div data-aos="fade-down" data-aos-duration="2000" class="w-full max-w-[250px] bg-transparent shadow-lg mt-5 hover:scale-110 duration-300">
                     <!-- <img class="w-72 py-5" src="/dist/img/pro2.jpg" alt=""> -->
                      <p class="text-center pt-32">Not Found</p>
                     <div class="pt-32 px-4 pb-5">
@@ -148,7 +150,7 @@
                       <small class="text-slate-500">-</small>
                     </div>
                   </div>
-                  <div class="w-full max-w-[250px] bg-transparent shadow-lg mt-5 hover:scale-110 duration-300">
+                  <div data-aos="fade-down" data-aos-duration="2000" class="w-full max-w-[250px] bg-transparent shadow-lg mt-5 hover:scale-110 duration-300">
                     <!-- <img class="w-72 py-5" src="/dist/img/pro2.jpg" alt=""> -->
                      <p class="text-center pt-32">Not Found</p>
                     <div class="pt-32 px-4 pb-5">
@@ -201,5 +203,8 @@
     </footer>
 
     <script src="/dist/js/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
